@@ -3,7 +3,18 @@
  * @param {number} target
  * @return {number}
  */
-function searchInsert(nums, target) {
+
+function searchIndexByLinearSearch(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] >= target) {
+            return i;
+        }
+    }
+
+    return nums.length;
+}
+
+function searchIndexByBinarySearch(nums, target) {
     let left = 0;
     let right = nums.length - 1;
 
@@ -25,4 +36,4 @@ function searchInsert(nums, target) {
     return left;
 };
 
-module.exports = searchInsert;
+module.exports = { searchIndexByLinearSearch, searchIndexByBinarySearch };
