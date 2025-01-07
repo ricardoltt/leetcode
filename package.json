@@ -1,0 +1,24 @@
+{
+  "name": "35-search-insert-position",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "## Overview This repository contains my solutions to various LeetCode problems.",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardoltt/leetcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ricardoltt/leetcode/issues"
+  },
+  "homepage": "https://github.com/ricardoltt/leetcode#readme"
+}
