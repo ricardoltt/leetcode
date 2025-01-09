@@ -20,25 +20,31 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 6, we return [0, 1]
 
-## Solution
-The solution implements an algorithm that:
+## Solutions
 
-1. Iterates through the array looking for pairs of numbers that sum to target
-2. Returns the indices of the two numbers when found
-3. Handles various edge cases including:
-   - Negative numbers
-   - Arrays containing zeros
-   - Multiple possible solutions (returns the first valid solution)
+### 1. Original Solution (Brute Force)
+- Uses nested loops to check all possible pairs
+- Time Complexity: O(n²)
+- Space Complexity: O(1)
+- Suitable for small arrays or when memory is a constraint
 
-### Time Complexity: O(n²)
-### Space Complexity: O(1)
+### 2. Optimized Solution (Hash Map)
+- Uses a hash map to store complements
+- Time Complexity: O(n)
+- Space Complexity: O(n)
+- Significantly faster for large arrays
+- Trades space for time efficiency
 
 ## Implementation
-The core logic:
-- Uses nested loops to check all possible pairs
-- Avoids using the same element twice
-- Returns indices in any order
-- Guarantees to find a solution as per problem constraints
+The repository includes both implementations:
+- `searchNumbersOfSum`: Original brute force solution
+- `searchNumbersOfSumOptimized`: Hash map-based optimized solution
+
+## Performance Comparison
+The test suite includes a performance comparison test that:
+- Creates a large array (10,000 elements)
+- Measures execution time for both solutions
+- Demonstrates the significant performance advantage of the optimized solution
 
 ## Tests
 The implementation is thoroughly tested using Jest with the following test cases:
@@ -51,6 +57,10 @@ The implementation is thoroughly tested using Jest with the following test cases
    - Arrays with negative numbers
    - Arrays containing zeros
    - Arrays with multiple possible solutions
+
+3. **Performance Testing**
+   - Compares execution time of both solutions
+   - Verifies the optimization benefits
 
 ### Running Tests
 
@@ -68,4 +78,6 @@ npm test
 - Only one valid answer exists
 
 ## Note
-While the current implementation works correctly, it could be optimized further using a hash map approach to achieve O(n) time complexity. The current solution prioritizes space complexity over time complexity. 
+The repository provides both implementations to demonstrate the trade-off between time and space complexity. Choose the appropriate solution based on your specific requirements:
+- Use the original solution when memory is constrained
+- Use the optimized solution when performance is critical 
