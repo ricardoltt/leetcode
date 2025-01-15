@@ -24,7 +24,7 @@ npm test -- 01-two-sum
 
 ## Solutions
 
-Detailed explanations and approaches for each problem are documented within their respective readme directories. The documentation is generated with AI assistance to ensure clarity and completeness.
+All first correct solutions were developed without AI assistance. Optimized solutions were developed with research about the problem and AI assistance. Detailed explanations and approaches for each problem are documented within their respective readme directories. The documentation is generated with AI assistance to ensure clarity and completeness.
 
 ## Note
 
